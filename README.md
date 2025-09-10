@@ -12,7 +12,7 @@ The key idea is to identify the optimal sub-network early in training, guided by
 
 Extensive experiments on **CIFAR-10/100** and **ImageNet** with **VGGNet, ResNet, and MobileNet** demonstrate that our method achieves **state-of-the-art accuracy** while being among the most efficient pruning frameworks in terms of training cost.  
 
-🔗 [Paper link (WACV 2026)](https://arxiv.org/abs/xxxx.xxxxx)  
+🔗 [Paper link (WACV 2026)](https://arxiv.org/abs/2501.13439)  
 📂 [Code](https://github.com/ghimiredhikura/OCSPruner)  
 
 ## 📊 Algorithm Pipeline
