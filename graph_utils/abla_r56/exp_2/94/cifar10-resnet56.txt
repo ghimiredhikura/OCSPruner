@@ -1,0 +1,620 @@
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: mode: prune
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: model: resnet56
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: resume: 
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: verbose: False
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: dataset: cifar10
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: batch_size: 128
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: total_warmup_epochs: 0
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: total_epochs: 300
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: learning_rate: (MultiStepLR, 0.1, [0.3|0.6|0.8|0.9], 0.2)
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: model_path: None
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: output_dir: eccv_abla_r56/2/cifar10/prune/cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: weight_decay: 0.0005
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: momentum: 0.9
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: seed: None
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: method: group_norm_sl_itosp
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: target_flop_rr: 0.5
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: reg: 0.0001
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: reg_delta: 0.0001
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: pruning_stability_thresh: 0.999
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: sl_start_epoch: 30
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: sl_end_epoch: 120
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: reg_add_interval: 3
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: prune_monitor_start_epoch: 1
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: layer_prune_limit: 0.7
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: layer_dynamic_prune_limit_fact: 1.0
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: loggerpsi: <Logger psi (DEBUG)>
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: logger: <Logger cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 (DEBUG)>
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: device: cuda
+[02/27 23:58:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: num_classes: 10
+[02/27 23:58:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Step 1: Training with Sparsity Learning...
+[02/27 23:58:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 0/300, Acc=0.3232, Val Loss=1.7609, lr=0.1000
+[02/27 23:58:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.51 M, (Param RR 40.62%)
+[02/27 23:58:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.62 M (FLOPs RR 49.95%, Speed-Up 2.00X )
+[02/27 23:58:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.0000, reg = 0.0001
+[02/27 23:58:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 1/300, Acc=0.4738, Val Loss=1.5016, lr=0.1000
+[02/27 23:58:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.48 M, (Param RR 43.57%)
+[02/27 23:58:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.59 M (FLOPs RR 49.97%, Speed-Up 2.00X )
+[02/27 23:58:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.3728, reg = 0.0001
+[02/27 23:58:43] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 2/300, Acc=0.6164, Val Loss=1.0850, lr=0.1000
+[02/27 23:58:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.49 M, (Param RR 43.32%)
+[02/27 23:58:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.56 M (FLOPs RR 50.00%, Speed-Up 2.00X )
+[02/27 23:58:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.4603, reg = 0.0001
+[02/27 23:58:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 3/300, Acc=0.6420, Val Loss=1.0514, lr=0.1000
+[02/27 23:58:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.85%)
+[02/27 23:58:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.50 M (FLOPs RR 50.05%, Speed-Up 2.00X )
+[02/27 23:58:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.6975, reg = 0.0001
+[02/27 23:58:55] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 4/300, Acc=0.6748, Val Loss=0.9766, lr=0.1000
+[02/27 23:58:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.27%)
+[02/27 23:58:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.36 M (FLOPs RR 50.15%, Speed-Up 2.01X )
+[02/27 23:58:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.7177, reg = 0.0001
+[02/27 23:59:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 5/300, Acc=0.7077, Val Loss=0.8865, lr=0.1000
+[02/27 23:59:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.24%)
+[02/27 23:59:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.62 M (FLOPs RR 49.95%, Speed-Up 2.00X )
+[02/27 23:59:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.7803, reg = 0.0001
+[02/27 23:59:07] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 6/300, Acc=0.7416, Val Loss=0.7879, lr=0.1000
+[02/27 23:59:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.44 M, (Param RR 48.51%)
+[02/27 23:59:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.54 M (FLOPs RR 50.01%, Speed-Up 2.00X )
+[02/27 23:59:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8263, reg = 0.0001
+[02/27 23:59:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 7/300, Acc=0.6662, Val Loss=1.0928, lr=0.1000
+[02/27 23:59:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 50.15%)
+[02/27 23:59:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.53 M (FLOPs RR 50.02%, Speed-Up 2.00X )
+[02/27 23:59:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8463, reg = 0.0001
+[02/27 23:59:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 8/300, Acc=0.7453, Val Loss=0.7575, lr=0.1000
+[02/27 23:59:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 51.46%)
+[02/27 23:59:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.21 M (FLOPs RR 50.27%, Speed-Up 2.01X )
+[02/27 23:59:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8580, reg = 0.0001
+[02/27 23:59:25] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 9/300, Acc=0.7021, Val Loss=0.9293, lr=0.1000
+[02/27 23:59:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.41 M, (Param RR 52.05%)
+[02/27 23:59:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.57 M (FLOPs RR 49.99%, Speed-Up 2.00X )
+[02/27 23:59:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8661, reg = 0.0001
+[02/27 23:59:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 10/300, Acc=0.7569, Val Loss=0.7529, lr=0.1000
+[02/27 23:59:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.41 M, (Param RR 52.54%)
+[02/27 23:59:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.53 M (FLOPs RR 50.02%, Speed-Up 2.00X )
+[02/27 23:59:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8747, reg = 0.0001
+[02/27 23:59:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 11/300, Acc=0.8007, Val Loss=0.5777, lr=0.1000
+[02/27 23:59:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.40 M, (Param RR 52.94%)
+[02/27 23:59:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.18 M (FLOPs RR 50.30%, Speed-Up 2.01X )
+[02/27 23:59:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8828, reg = 0.0001
+[02/27 23:59:43] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 12/300, Acc=0.7974, Val Loss=0.5933, lr=0.1000
+[02/27 23:59:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.41 M, (Param RR 51.90%)
+[02/27 23:59:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.85 M (FLOPs RR 49.77%, Speed-Up 1.99X )
+[02/27 23:59:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8863, reg = 0.0001
+[02/27 23:59:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 13/300, Acc=0.7818, Val Loss=0.6487, lr=0.1000
+[02/27 23:59:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 50.96%)
+[02/27 23:59:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.61 M (FLOPs RR 49.96%, Speed-Up 2.00X )
+[02/27 23:59:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8827, reg = 0.0001
+[02/27 23:59:55] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 14/300, Acc=0.7801, Val Loss=0.6697, lr=0.1000
+[02/27 23:59:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 51.49%)
+[02/27 23:59:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.80 M (FLOPs RR 49.81%, Speed-Up 1.99X )
+[02/27 23:59:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8884, reg = 0.0001
+[02/28 00:00:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 15/300, Acc=0.7991, Val Loss=0.5993, lr=0.1000
+[02/28 00:00:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.41 M, (Param RR 51.66%)
+[02/28 00:00:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.55 M (FLOPs RR 50.01%, Speed-Up 2.00X )
+[02/28 00:00:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8927, reg = 0.0001
+[02/28 00:00:07] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 16/300, Acc=0.7660, Val Loss=0.7326, lr=0.1000
+[02/28 00:00:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.40 M, (Param RR 52.76%)
+[02/28 00:00:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.35 M (FLOPs RR 50.16%, Speed-Up 2.01X )
+[02/28 00:00:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8943, reg = 0.0001
+[02/28 00:00:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 17/300, Acc=0.8165, Val Loss=0.5319, lr=0.1000
+[02/28 00:00:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 50.68%)
+[02/28 00:00:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.60 M (FLOPs RR 49.97%, Speed-Up 2.00X )
+[02/28 00:00:15] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8962, reg = 0.0001
+[02/28 00:00:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 18/300, Acc=0.8051, Val Loss=0.5841, lr=0.1000
+[02/28 00:00:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 51.47%)
+[02/28 00:00:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.33 M (FLOPs RR 50.18%, Speed-Up 2.01X )
+[02/28 00:00:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8958, reg = 0.0001
+[02/28 00:00:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 19/300, Acc=0.7628, Val Loss=0.7168, lr=0.1000
+[02/28 00:00:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 51.16%)
+[02/28 00:00:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.29 M (FLOPs RR 50.21%, Speed-Up 2.01X )
+[02/28 00:00:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9037, reg = 0.0001
+[02/28 00:00:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 20/300, Acc=0.7362, Val Loss=0.7803, lr=0.1000
+[02/28 00:00:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 50.92%)
+[02/28 00:00:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.61 M (FLOPs RR 49.96%, Speed-Up 2.00X )
+[02/28 00:00:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8993, reg = 0.0001
+[02/28 00:00:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 21/300, Acc=0.8086, Val Loss=0.6147, lr=0.1000
+[02/28 00:00:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.67%)
+[02/28 00:00:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.73 M (FLOPs RR 49.86%, Speed-Up 1.99X )
+[02/28 00:00:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9023, reg = 0.0001
+[02/28 00:00:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 22/300, Acc=0.8080, Val Loss=0.5715, lr=0.1000
+[02/28 00:00:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 50.52%)
+[02/28 00:00:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.61 M (FLOPs RR 49.96%, Speed-Up 2.00X )
+[02/28 00:00:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8932, reg = 0.0001
+[02/28 00:00:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 23/300, Acc=0.7289, Val Loss=0.8770, lr=0.1000
+[02/28 00:00:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 51.12%)
+[02/28 00:00:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.57 M (FLOPs RR 49.99%, Speed-Up 2.00X )
+[02/28 00:00:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8916, reg = 0.0001
+[02/28 00:00:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 24/300, Acc=0.8158, Val Loss=0.5448, lr=0.1000
+[02/28 00:00:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 50.11%)
+[02/28 00:00:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.68 M (FLOPs RR 49.90%, Speed-Up 2.00X )
+[02/28 00:00:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8862, reg = 0.0001
+[02/28 00:01:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 25/300, Acc=0.7874, Val Loss=0.6379, lr=0.1000
+[02/28 00:01:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 51.09%)
+[02/28 00:01:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.25 M (FLOPs RR 50.24%, Speed-Up 2.01X )
+[02/28 00:01:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8891, reg = 0.0001
+[02/28 00:01:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 26/300, Acc=0.8124, Val Loss=0.5738, lr=0.1000
+[02/28 00:01:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 50.64%)
+[02/28 00:01:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.50 M (FLOPs RR 50.05%, Speed-Up 2.00X )
+[02/28 00:01:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8896, reg = 0.0001
+[02/28 00:01:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 27/300, Acc=0.8297, Val Loss=0.5141, lr=0.1000
+[02/28 00:01:15] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.87%)
+[02/28 00:01:15] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.80 M (FLOPs RR 49.81%, Speed-Up 1.99X )
+[02/28 00:01:15] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8879, reg = 0.0001
+[02/28 00:01:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 28/300, Acc=0.8398, Val Loss=0.4855, lr=0.1000
+[02/28 00:01:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 50.91%)
+[02/28 00:01:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.54 M (FLOPs RR 50.02%, Speed-Up 2.00X )
+[02/28 00:01:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8901, reg = 0.0001
+[02/28 00:01:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 29/300, Acc=0.7889, Val Loss=0.6234, lr=0.1000
+[02/28 00:01:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.44 M, (Param RR 48.90%)
+[02/28 00:01:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.38 M (FLOPs RR 50.14%, Speed-Up 2.01X )
+[02/28 00:01:28] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8934, reg = 0.0001
+[02/28 00:01:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 30/300, Acc=0.7996, Val Loss=0.6120, lr=0.1000
+[02/28 00:01:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.66%)
+[02/28 00:01:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.61 M (FLOPs RR 49.96%, Speed-Up 2.00X )
+[02/28 00:01:34] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8932, reg = 0.0001
+[02/28 00:01:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 31/300, Acc=0.7995, Val Loss=0.6469, lr=0.1000
+[02/28 00:01:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.42 M, (Param RR 50.79%)
+[02/28 00:01:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.61 M (FLOPs RR 49.96%, Speed-Up 2.00X )
+[02/28 00:01:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8929, reg = 0.0001
+[02/28 00:01:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 32/300, Acc=0.8000, Val Loss=0.5881, lr=0.1000
+[02/28 00:01:48] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.87%)
+[02/28 00:01:48] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.55 M (FLOPs RR 50.01%, Speed-Up 2.00X )
+[02/28 00:01:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8885, reg = 0.0001
+[02/28 00:01:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 33/300, Acc=0.8050, Val Loss=0.5729, lr=0.1000
+[02/28 00:01:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.84%)
+[02/28 00:01:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.72 M (FLOPs RR 49.87%, Speed-Up 1.99X )
+[02/28 00:01:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8923, reg = 0.0002
+[02/28 00:02:04] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 34/300, Acc=0.8120, Val Loss=0.5984, lr=0.1000
+[02/28 00:02:05] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.78%)
+[02/28 00:02:05] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.62 M (FLOPs RR 49.95%, Speed-Up 2.00X )
+[02/28 00:02:05] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.8943, reg = 0.0002
+[02/28 00:02:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 35/300, Acc=0.7946, Val Loss=0.6085, lr=0.1000
+[02/28 00:02:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.44 M, (Param RR 48.56%)
+[02/28 00:02:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.60 M (FLOPs RR 49.97%, Speed-Up 2.00X )
+[02/28 00:02:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9017, reg = 0.0002
+[02/28 00:02:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 36/300, Acc=0.8179, Val Loss=0.5251, lr=0.1000
+[02/28 00:02:22] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.33%)
+[02/28 00:02:22] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.19 M (FLOPs RR 50.29%, Speed-Up 2.01X )
+[02/28 00:02:22] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9102, reg = 0.0003
+[02/28 00:02:29] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 37/300, Acc=0.7577, Val Loss=0.7676, lr=0.1000
+[02/28 00:02:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.23%)
+[02/28 00:02:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.37 M (FLOPs RR 50.15%, Speed-Up 2.01X )
+[02/28 00:02:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9204, reg = 0.0003
+[02/28 00:02:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 38/300, Acc=0.7683, Val Loss=0.7435, lr=0.1000
+[02/28 00:02:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.44 M, (Param RR 48.25%)
+[02/28 00:02:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 64.91 M (FLOPs RR 48.93%, Speed-Up 1.96X )
+[02/28 00:02:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9289, reg = 0.0003
+[02/28 00:02:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 39/300, Acc=0.8136, Val Loss=0.5550, lr=0.1000
+[02/28 00:02:48] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.43 M, (Param RR 49.25%)
+[02/28 00:02:48] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.32 M (FLOPs RR 50.18%, Speed-Up 2.01X )
+[02/28 00:02:48] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9353, reg = 0.0004
+[02/28 00:02:55] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 40/300, Acc=0.8138, Val Loss=0.5593, lr=0.1000
+[02/28 00:02:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.44 M, (Param RR 48.87%)
+[02/28 00:02:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.51 M (FLOPs RR 50.04%, Speed-Up 2.00X )
+[02/28 00:02:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9331, reg = 0.0004
+[02/28 00:03:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 41/300, Acc=0.8177, Val Loss=0.5530, lr=0.1000
+[02/28 00:03:04] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.90%)
+[02/28 00:03:04] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 62.99 M (FLOPs RR 50.45%, Speed-Up 2.02X )
+[02/28 00:03:05] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9382, reg = 0.0004
+[02/28 00:03:12] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 42/300, Acc=0.7939, Val Loss=0.6305, lr=0.1000
+[02/28 00:03:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.65%)
+[02/28 00:03:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 64.16 M (FLOPs RR 49.53%, Speed-Up 1.98X )
+[02/28 00:03:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9395, reg = 0.0005
+[02/28 00:03:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 43/300, Acc=0.8346, Val Loss=0.4873, lr=0.1000
+[02/28 00:03:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.81%)
+[02/28 00:03:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.23 M (FLOPs RR 50.26%, Speed-Up 2.01X )
+[02/28 00:03:22] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9499, reg = 0.0005
+[02/28 00:03:29] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 44/300, Acc=0.8329, Val Loss=0.4953, lr=0.1000
+[02/28 00:03:30] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.24%)
+[02/28 00:03:30] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.03 M (FLOPs RR 50.42%, Speed-Up 2.02X )
+[02/28 00:03:30] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9530, reg = 0.0005
+[02/28 00:03:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 45/300, Acc=0.8265, Val Loss=0.5095, lr=0.1000
+[02/28 00:03:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.34%)
+[02/28 00:03:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.52 M (FLOPs RR 50.03%, Speed-Up 2.00X )
+[02/28 00:03:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9639, reg = 0.0006
+[02/28 00:03:46] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 46/300, Acc=0.8242, Val Loss=0.5098, lr=0.1000
+[02/28 00:03:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.22%)
+[02/28 00:03:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.62 M (FLOPs RR 49.95%, Speed-Up 2.00X )
+[02/28 00:03:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9637, reg = 0.0006
+[02/28 00:03:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 47/300, Acc=0.7791, Val Loss=0.6786, lr=0.1000
+[02/28 00:03:55] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.70%)
+[02/28 00:03:55] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.62 M (FLOPs RR 49.95%, Speed-Up 2.00X )
+[02/28 00:03:55] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9651, reg = 0.0006
+[02/28 00:04:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 48/300, Acc=0.8315, Val Loss=0.5020, lr=0.1000
+[02/28 00:04:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.66%)
+[02/28 00:04:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.54 M (FLOPs RR 50.01%, Speed-Up 2.00X )
+[02/28 00:04:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9596, reg = 0.0007
+[02/28 00:04:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 49/300, Acc=0.8135, Val Loss=0.5621, lr=0.1000
+[02/28 00:04:12] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.76%)
+[02/28 00:04:12] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.59 M (FLOPs RR 49.98%, Speed-Up 2.00X )
+[02/28 00:04:12] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9622, reg = 0.0007
+[02/28 00:04:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 50/300, Acc=0.7887, Val Loss=0.6511, lr=0.1000
+[02/28 00:04:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.73%)
+[02/28 00:04:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.60 M (FLOPs RR 49.97%, Speed-Up 2.00X )
+[02/28 00:04:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9678, reg = 0.0007
+[02/28 00:04:28] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 51/300, Acc=0.7987, Val Loss=0.6346, lr=0.1000
+[02/28 00:04:29] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.55%)
+[02/28 00:04:29] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.20 M (FLOPs RR 50.28%, Speed-Up 2.01X )
+[02/28 00:04:29] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9699, reg = 0.0008
+[02/28 00:04:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 52/300, Acc=0.7698, Val Loss=0.7156, lr=0.1000
+[02/28 00:04:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.34%)
+[02/28 00:04:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.59 M (FLOPs RR 49.98%, Speed-Up 2.00X )
+[02/28 00:04:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9721, reg = 0.0008
+[02/28 00:04:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 53/300, Acc=0.8207, Val Loss=0.5348, lr=0.1000
+[02/28 00:04:46] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.45 M, (Param RR 47.25%)
+[02/28 00:04:46] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.60 M (FLOPs RR 49.96%, Speed-Up 2.00X )
+[02/28 00:04:46] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9680, reg = 0.0008
+[02/28 00:04:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 54/300, Acc=0.8200, Val Loss=0.5388, lr=0.1000
+[02/28 00:04:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.62%)
+[02/28 00:04:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.56 M (FLOPs RR 50.00%, Speed-Up 2.00X )
+[02/28 00:04:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9698, reg = 0.0009
+[02/28 00:05:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 55/300, Acc=0.8436, Val Loss=0.4629, lr=0.1000
+[02/28 00:05:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.34%)
+[02/28 00:05:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.53 M (FLOPs RR 50.02%, Speed-Up 2.00X )
+[02/28 00:05:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9701, reg = 0.0009
+[02/28 00:05:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 56/300, Acc=0.8030, Val Loss=0.6241, lr=0.1000
+[02/28 00:05:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.44%)
+[02/28 00:05:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.47 M (FLOPs RR 50.07%, Speed-Up 2.00X )
+[02/28 00:05:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9736, reg = 0.0009
+[02/28 00:05:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 57/300, Acc=0.7936, Val Loss=0.6287, lr=0.1000
+[02/28 00:05:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.55%)
+[02/28 00:05:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.60 M (FLOPs RR 49.97%, Speed-Up 2.00X )
+[02/28 00:05:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9772, reg = 0.0010
+[02/28 00:05:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 58/300, Acc=0.8127, Val Loss=0.5594, lr=0.1000
+[02/28 00:05:28] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.51%)
+[02/28 00:05:28] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.50 M (FLOPs RR 50.05%, Speed-Up 2.00X )
+[02/28 00:05:28] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9791, reg = 0.0010
+[02/28 00:05:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 59/300, Acc=0.8262, Val Loss=0.5160, lr=0.1000
+[02/28 00:05:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.61%)
+[02/28 00:05:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.64 M (FLOPs RR 49.94%, Speed-Up 2.00X )
+[02/28 00:05:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9777, reg = 0.0010
+[02/28 00:05:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 60/300, Acc=0.8003, Val Loss=0.6065, lr=0.1000
+[02/28 00:05:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.32%)
+[02/28 00:05:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.41 M (FLOPs RR 50.12%, Speed-Up 2.00X )
+[02/28 00:05:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9742, reg = 0.0011
+[02/28 00:05:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 61/300, Acc=0.7927, Val Loss=0.6409, lr=0.1000
+[02/28 00:05:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.33%)
+[02/28 00:05:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.60 M (FLOPs RR 49.97%, Speed-Up 2.00X )
+[02/28 00:05:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9759, reg = 0.0011
+[02/28 00:06:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 62/300, Acc=0.8158, Val Loss=0.5577, lr=0.1000
+[02/28 00:06:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.59%)
+[02/28 00:06:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.68 M (FLOPs RR 49.91%, Speed-Up 2.00X )
+[02/28 00:06:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9775, reg = 0.0011
+[02/28 00:06:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 63/300, Acc=0.8037, Val Loss=0.6157, lr=0.1000
+[02/28 00:06:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.74%)
+[02/28 00:06:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.53 M (FLOPs RR 50.02%, Speed-Up 2.00X )
+[02/28 00:06:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9830, reg = 0.0012
+[02/28 00:06:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 64/300, Acc=0.7516, Val Loss=0.7757, lr=0.1000
+[02/28 00:06:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.50%)
+[02/28 00:06:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.53 M (FLOPs RR 50.02%, Speed-Up 2.00X )
+[02/28 00:06:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9841, reg = 0.0012
+[02/28 00:06:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 65/300, Acc=0.7650, Val Loss=0.7439, lr=0.1000
+[02/28 00:06:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.33%)
+[02/28 00:06:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.60 M (FLOPs RR 49.97%, Speed-Up 2.00X )
+[02/28 00:06:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9879, reg = 0.0012
+[02/28 00:06:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 66/300, Acc=0.7577, Val Loss=0.7249, lr=0.1000
+[02/28 00:06:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.47%)
+[02/28 00:06:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.57 M (FLOPs RR 49.99%, Speed-Up 2.00X )
+[02/28 00:06:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9850, reg = 0.0013
+[02/28 00:06:43] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 67/300, Acc=0.8237, Val Loss=0.5294, lr=0.1000
+[02/28 00:06:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.31%)
+[02/28 00:06:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.92 M (FLOPs RR 49.71%, Speed-Up 1.99X )
+[02/28 00:06:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9823, reg = 0.0013
+[02/28 00:06:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 68/300, Acc=0.7865, Val Loss=0.6472, lr=0.1000
+[02/28 00:06:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.68%)
+[02/28 00:06:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 62.17 M (FLOPs RR 51.09%, Speed-Up 2.04X )
+[02/28 00:06:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9812, reg = 0.0013
+[02/28 00:07:00] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 69/300, Acc=0.8450, Val Loss=0.4737, lr=0.1000
+[02/28 00:07:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.55%)
+[02/28 00:07:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 62.00 M (FLOPs RR 51.23%, Speed-Up 2.05X )
+[02/28 00:07:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9845, reg = 0.0014
+[02/28 00:07:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 70/300, Acc=0.8217, Val Loss=0.5220, lr=0.1000
+[02/28 00:07:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.26%)
+[02/28 00:07:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 64.53 M (FLOPs RR 49.23%, Speed-Up 1.97X )
+[02/28 00:07:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9857, reg = 0.0014
+[02/28 00:07:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 71/300, Acc=0.8246, Val Loss=0.5453, lr=0.1000
+[02/28 00:07:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.73%)
+[02/28 00:07:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 62.04 M (FLOPs RR 51.20%, Speed-Up 2.05X )
+[02/28 00:07:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9834, reg = 0.0014
+[02/28 00:07:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 72/300, Acc=0.8094, Val Loss=0.5660, lr=0.1000
+[02/28 00:07:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.31%)
+[02/28 00:07:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 64.57 M (FLOPs RR 49.20%, Speed-Up 1.97X )
+[02/28 00:07:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9805, reg = 0.0015
+[02/28 00:07:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 73/300, Acc=0.7992, Val Loss=0.6304, lr=0.1000
+[02/28 00:07:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.62%)
+[02/28 00:07:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 62.40 M (FLOPs RR 50.91%, Speed-Up 2.04X )
+[02/28 00:07:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9823, reg = 0.0015
+[02/28 00:07:43] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 74/300, Acc=0.7755, Val Loss=0.6998, lr=0.1000
+[02/28 00:07:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.57%)
+[02/28 00:07:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 62.53 M (FLOPs RR 50.81%, Speed-Up 2.03X )
+[02/28 00:07:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9860, reg = 0.0015
+[02/28 00:07:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 75/300, Acc=0.8194, Val Loss=0.5512, lr=0.1000
+[02/28 00:07:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.10%)
+[02/28 00:07:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.16 M (FLOPs RR 50.32%, Speed-Up 2.01X )
+[02/28 00:07:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9891, reg = 0.0016
+[02/28 00:08:00] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 76/300, Acc=0.7916, Val Loss=0.6829, lr=0.1000
+[02/28 00:08:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.12%)
+[02/28 00:08:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 62.97 M (FLOPs RR 50.46%, Speed-Up 2.02X )
+[02/28 00:08:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9893, reg = 0.0016
+[02/28 00:08:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 77/300, Acc=0.8308, Val Loss=0.4954, lr=0.1000
+[02/28 00:08:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 45.91%)
+[02/28 00:08:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 65.25 M (FLOPs RR 48.67%, Speed-Up 1.95X )
+[02/28 00:08:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9869, reg = 0.0016
+[02/28 00:08:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 78/300, Acc=0.8112, Val Loss=0.5738, lr=0.1000
+[02/28 00:08:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.30%)
+[02/28 00:08:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.23 M (FLOPs RR 50.26%, Speed-Up 2.01X )
+[02/28 00:08:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9877, reg = 0.0017
+[02/28 00:08:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 79/300, Acc=0.7732, Val Loss=0.7450, lr=0.1000
+[02/28 00:08:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.19%)
+[02/28 00:08:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.28 M (FLOPs RR 50.21%, Speed-Up 2.01X )
+[02/28 00:08:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9902, reg = 0.0017
+[02/28 00:08:34] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 80/300, Acc=0.7589, Val Loss=0.7805, lr=0.1000
+[02/28 00:08:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.30%)
+[02/28 00:08:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.23 M (FLOPs RR 50.26%, Speed-Up 2.01X )
+[02/28 00:08:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9955, reg = 0.0017
+[02/28 00:08:43] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 81/300, Acc=0.7376, Val Loss=0.8096, lr=0.1000
+[02/28 00:08:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.24%)
+[02/28 00:08:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.36 M (FLOPs RR 50.16%, Speed-Up 2.01X )
+[02/28 00:08:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9963, reg = 0.0018
+[02/28 00:08:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 82/300, Acc=0.8215, Val Loss=0.5397, lr=0.1000
+[02/28 00:08:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.51%)
+[02/28 00:08:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.11 M (FLOPs RR 50.35%, Speed-Up 2.01X )
+[02/28 00:08:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9960, reg = 0.0018
+[02/28 00:09:00] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 83/300, Acc=0.7678, Val Loss=0.7389, lr=0.1000
+[02/28 00:09:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.61%)
+[02/28 00:09:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.04 M (FLOPs RR 50.41%, Speed-Up 2.02X )
+[02/28 00:09:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9932, reg = 0.0018
+[02/28 00:09:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 84/300, Acc=0.8325, Val Loss=0.4904, lr=0.1000
+[02/28 00:09:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.63%)
+[02/28 00:09:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.02 M (FLOPs RR 50.42%, Speed-Up 2.02X )
+[02/28 00:09:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9925, reg = 0.0019
+[02/28 00:09:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 85/300, Acc=0.8542, Val Loss=0.4251, lr=0.1000
+[02/28 00:09:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.53%)
+[02/28 00:09:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.08 M (FLOPs RR 50.37%, Speed-Up 2.02X )
+[02/28 00:09:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9936, reg = 0.0019
+[02/28 00:09:25] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 86/300, Acc=0.8377, Val Loss=0.4888, lr=0.1000
+[02/28 00:09:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.53%)
+[02/28 00:09:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.08 M (FLOPs RR 50.37%, Speed-Up 2.02X )
+[02/28 00:09:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9966, reg = 0.0019
+[02/28 00:09:34] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 87/300, Acc=0.8120, Val Loss=0.5589, lr=0.1000
+[02/28 00:09:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.25%)
+[02/28 00:09:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 65.06 M (FLOPs RR 48.82%, Speed-Up 1.95X )
+[02/28 00:09:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9977, reg = 0.0020
+[02/28 00:09:43] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 88/300, Acc=0.8171, Val Loss=0.5805, lr=0.1000
+[02/28 00:09:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.43%)
+[02/28 00:09:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.30 M (FLOPs RR 50.20%, Speed-Up 2.01X )
+[02/28 00:09:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9974, reg = 0.0020
+[02/28 00:09:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 89/300, Acc=0.8414, Val Loss=0.4661, lr=0.0200
+[02/28 00:09:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.43%)
+[02/28 00:09:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.30 M (FLOPs RR 50.20%, Speed-Up 2.01X )
+[02/28 00:09:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9961, reg = 0.0020
+[02/28 00:10:00] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 90/300, Acc=0.9058, Val Loss=0.2746, lr=0.0200
+[02/28 00:10:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.43%)
+[02/28 00:10:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.30 M (FLOPs RR 50.20%, Speed-Up 2.01X )
+[02/28 00:10:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9975, reg = 0.0021
+[02/28 00:10:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 91/300, Acc=0.9144, Val Loss=0.2546, lr=0.0200
+[02/28 00:10:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.43%)
+[02/28 00:10:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.30 M (FLOPs RR 50.20%, Speed-Up 2.01X )
+[02/28 00:10:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 0.9984, reg = 0.0021
+[02/28 00:10:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 92/300, Acc=0.9070, Val Loss=0.2809, lr=0.0200
+[02/28 00:10:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.43%)
+[02/28 00:10:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.30 M (FLOPs RR 50.20%, Speed-Up 2.01X )
+[02/28 00:10:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Pruning Stability Indicator = 1.0000, reg = 0.0021
+[02/28 00:10:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 93/300, Acc=0.9148, Val Loss=0.2684, lr=0.0200
+[02/28 00:10:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Best Acc=0.9148
+[02/28 00:10:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: ####################################################################################
+[02/28 00:10:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Step 2: Pruning...
+[02/28 00:10:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Params: 0.86 M => 0.46 M, (Param RR 46.43%)
+[02/28 00:10:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: FLOPs: 127.12 M => 63.30 M (FLOPs RR 50.20%, Speed-Up 2.01X )
+[02/28 00:10:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Acc: 0.9148 => 0.2910
+[02/28 00:10:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Val Loss: 0.2684 => 4.9108
+[02/28 00:10:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: ####################################################################################
+[02/28 00:10:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Step 3: Training Pruned Model...
+[02/28 00:10:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 94/300, Acc=0.8850, Val Loss=0.3461, lr=0.0200
+[02/28 00:10:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 95/300, Acc=0.8930, Val Loss=0.3172, lr=0.0200
+[02/28 00:10:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 96/300, Acc=0.8884, Val Loss=0.3280, lr=0.0200
+[02/28 00:10:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 97/300, Acc=0.8887, Val Loss=0.3394, lr=0.0200
+[02/28 00:10:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 98/300, Acc=0.8866, Val Loss=0.3595, lr=0.0200
+[02/28 00:10:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 99/300, Acc=0.8912, Val Loss=0.3399, lr=0.0200
+[02/28 00:10:59] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 100/300, Acc=0.8816, Val Loss=0.3763, lr=0.0200
+[02/28 00:11:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 101/300, Acc=0.8879, Val Loss=0.3543, lr=0.0200
+[02/28 00:11:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 102/300, Acc=0.8869, Val Loss=0.3449, lr=0.0200
+[02/28 00:11:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 103/300, Acc=0.8760, Val Loss=0.3926, lr=0.0200
+[02/28 00:11:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 104/300, Acc=0.8808, Val Loss=0.3740, lr=0.0200
+[02/28 00:11:22] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 105/300, Acc=0.8670, Val Loss=0.4122, lr=0.0200
+[02/28 00:11:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 106/300, Acc=0.8958, Val Loss=0.3219, lr=0.0200
+[02/28 00:11:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 107/300, Acc=0.8768, Val Loss=0.3931, lr=0.0200
+[02/28 00:11:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 108/300, Acc=0.8773, Val Loss=0.3990, lr=0.0200
+[02/28 00:11:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 109/300, Acc=0.8910, Val Loss=0.3349, lr=0.0200
+[02/28 00:11:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 110/300, Acc=0.8966, Val Loss=0.3402, lr=0.0200
+[02/28 00:11:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 111/300, Acc=0.8882, Val Loss=0.3520, lr=0.0200
+[02/28 00:11:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 112/300, Acc=0.8886, Val Loss=0.3461, lr=0.0200
+[02/28 00:11:58] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 113/300, Acc=0.8858, Val Loss=0.3501, lr=0.0200
+[02/28 00:12:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 114/300, Acc=0.8952, Val Loss=0.3327, lr=0.0200
+[02/28 00:12:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 115/300, Acc=0.8762, Val Loss=0.4122, lr=0.0200
+[02/28 00:12:12] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 116/300, Acc=0.8794, Val Loss=0.3919, lr=0.0200
+[02/28 00:12:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 117/300, Acc=0.8897, Val Loss=0.3386, lr=0.0200
+[02/28 00:12:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 118/300, Acc=0.8952, Val Loss=0.3231, lr=0.0200
+[02/28 00:12:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 119/300, Acc=0.8963, Val Loss=0.3190, lr=0.0200
+[02/28 00:12:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 120/300, Acc=0.8916, Val Loss=0.3479, lr=0.0200
+[02/28 00:12:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 121/300, Acc=0.8986, Val Loss=0.3150, lr=0.0200
+[02/28 00:12:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 122/300, Acc=0.8880, Val Loss=0.3393, lr=0.0200
+[02/28 00:12:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 123/300, Acc=0.8980, Val Loss=0.3250, lr=0.0200
+[02/28 00:12:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 124/300, Acc=0.8878, Val Loss=0.3737, lr=0.0200
+[02/28 00:12:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 125/300, Acc=0.8930, Val Loss=0.3464, lr=0.0200
+[02/28 00:12:58] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 126/300, Acc=0.8813, Val Loss=0.3908, lr=0.0200
+[02/28 00:13:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 127/300, Acc=0.8850, Val Loss=0.3741, lr=0.0200
+[02/28 00:13:07] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 128/300, Acc=0.8951, Val Loss=0.3303, lr=0.0200
+[02/28 00:13:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 129/300, Acc=0.8906, Val Loss=0.3448, lr=0.0200
+[02/28 00:13:16] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 130/300, Acc=0.8965, Val Loss=0.3363, lr=0.0200
+[02/28 00:13:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 131/300, Acc=0.8980, Val Loss=0.3203, lr=0.0200
+[02/28 00:13:25] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 132/300, Acc=0.8797, Val Loss=0.3906, lr=0.0200
+[02/28 00:13:30] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 133/300, Acc=0.8815, Val Loss=0.3942, lr=0.0200
+[02/28 00:13:34] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 134/300, Acc=0.8951, Val Loss=0.3231, lr=0.0200
+[02/28 00:13:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 135/300, Acc=0.8928, Val Loss=0.3430, lr=0.0200
+[02/28 00:13:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 136/300, Acc=0.8867, Val Loss=0.3691, lr=0.0200
+[02/28 00:13:48] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 137/300, Acc=0.8867, Val Loss=0.3735, lr=0.0200
+[02/28 00:13:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 138/300, Acc=0.8880, Val Loss=0.3647, lr=0.0200
+[02/28 00:13:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 139/300, Acc=0.8834, Val Loss=0.3850, lr=0.0200
+[02/28 00:14:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 140/300, Acc=0.8883, Val Loss=0.3563, lr=0.0200
+[02/28 00:14:06] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 141/300, Acc=0.8958, Val Loss=0.3340, lr=0.0200
+[02/28 00:14:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 142/300, Acc=0.8903, Val Loss=0.3750, lr=0.0200
+[02/28 00:14:16] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 143/300, Acc=0.8877, Val Loss=0.3606, lr=0.0200
+[02/28 00:14:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 144/300, Acc=0.8747, Val Loss=0.4059, lr=0.0200
+[02/28 00:14:25] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 145/300, Acc=0.8811, Val Loss=0.3971, lr=0.0200
+[02/28 00:14:29] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 146/300, Acc=0.8955, Val Loss=0.3606, lr=0.0200
+[02/28 00:14:34] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 147/300, Acc=0.8807, Val Loss=0.4051, lr=0.0200
+[02/28 00:14:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 148/300, Acc=0.8664, Val Loss=0.4325, lr=0.0200
+[02/28 00:14:43] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 149/300, Acc=0.8931, Val Loss=0.3361, lr=0.0200
+[02/28 00:14:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 150/300, Acc=0.8849, Val Loss=0.3631, lr=0.0200
+[02/28 00:14:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 151/300, Acc=0.8749, Val Loss=0.4018, lr=0.0200
+[02/28 00:14:57] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 152/300, Acc=0.8873, Val Loss=0.3589, lr=0.0200
+[02/28 00:15:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 153/300, Acc=0.8752, Val Loss=0.4082, lr=0.0200
+[02/28 00:15:06] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 154/300, Acc=0.8798, Val Loss=0.3835, lr=0.0200
+[02/28 00:15:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 155/300, Acc=0.8873, Val Loss=0.3819, lr=0.0200
+[02/28 00:15:15] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 156/300, Acc=0.8927, Val Loss=0.3589, lr=0.0200
+[02/28 00:15:20] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 157/300, Acc=0.8985, Val Loss=0.3334, lr=0.0200
+[02/28 00:15:24] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 158/300, Acc=0.8895, Val Loss=0.3585, lr=0.0200
+[02/28 00:15:29] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 159/300, Acc=0.8804, Val Loss=0.3805, lr=0.0200
+[02/28 00:15:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 160/300, Acc=0.8878, Val Loss=0.3515, lr=0.0200
+[02/28 00:15:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 161/300, Acc=0.8904, Val Loss=0.3602, lr=0.0200
+[02/28 00:15:42] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 162/300, Acc=0.8846, Val Loss=0.3714, lr=0.0200
+[02/28 00:15:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 163/300, Acc=0.8775, Val Loss=0.4204, lr=0.0200
+[02/28 00:15:52] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 164/300, Acc=0.8940, Val Loss=0.3398, lr=0.0200
+[02/28 00:15:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 165/300, Acc=0.8845, Val Loss=0.3698, lr=0.0200
+[02/28 00:16:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 166/300, Acc=0.8817, Val Loss=0.3905, lr=0.0200
+[02/28 00:16:06] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 167/300, Acc=0.8842, Val Loss=0.3795, lr=0.0200
+[02/28 00:16:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 168/300, Acc=0.8825, Val Loss=0.3950, lr=0.0200
+[02/28 00:16:15] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 169/300, Acc=0.8932, Val Loss=0.3531, lr=0.0200
+[02/28 00:16:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 170/300, Acc=0.8939, Val Loss=0.3532, lr=0.0200
+[02/28 00:16:24] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 171/300, Acc=0.8718, Val Loss=0.4320, lr=0.0200
+[02/28 00:16:29] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 172/300, Acc=0.8785, Val Loss=0.3888, lr=0.0200
+[02/28 00:16:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 173/300, Acc=0.8803, Val Loss=0.4152, lr=0.0200
+[02/28 00:16:38] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 174/300, Acc=0.8515, Val Loss=0.5162, lr=0.0200
+[02/28 00:16:42] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 175/300, Acc=0.8814, Val Loss=0.3987, lr=0.0200
+[02/28 00:16:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 176/300, Acc=0.8925, Val Loss=0.3495, lr=0.0200
+[02/28 00:16:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 177/300, Acc=0.8911, Val Loss=0.3583, lr=0.0200
+[02/28 00:16:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 178/300, Acc=0.8786, Val Loss=0.3975, lr=0.0200
+[02/28 00:17:01] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 179/300, Acc=0.8927, Val Loss=0.3560, lr=0.0200
+[02/28 00:17:05] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 180/300, Acc=0.8844, Val Loss=0.3754, lr=0.0040
+[02/28 00:17:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 181/300, Acc=0.9234, Val Loss=0.2480, lr=0.0040
+[02/28 00:17:15] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 182/300, Acc=0.9289, Val Loss=0.2427, lr=0.0040
+[02/28 00:17:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 183/300, Acc=0.9287, Val Loss=0.2438, lr=0.0040
+[02/28 00:17:24] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 184/300, Acc=0.9282, Val Loss=0.2540, lr=0.0040
+[02/28 00:17:28] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 185/300, Acc=0.9290, Val Loss=0.2650, lr=0.0040
+[02/28 00:17:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 186/300, Acc=0.9308, Val Loss=0.2525, lr=0.0040
+[02/28 00:17:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 187/300, Acc=0.9301, Val Loss=0.2613, lr=0.0040
+[02/28 00:17:42] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 188/300, Acc=0.9286, Val Loss=0.2662, lr=0.0040
+[02/28 00:17:47] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 189/300, Acc=0.9318, Val Loss=0.2690, lr=0.0040
+[02/28 00:17:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 190/300, Acc=0.9286, Val Loss=0.2747, lr=0.0040
+[02/28 00:17:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 191/300, Acc=0.9281, Val Loss=0.2756, lr=0.0040
+[02/28 00:18:00] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 192/300, Acc=0.9316, Val Loss=0.2644, lr=0.0040
+[02/28 00:18:05] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 193/300, Acc=0.9284, Val Loss=0.2811, lr=0.0040
+[02/28 00:18:10] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 194/300, Acc=0.9271, Val Loss=0.2896, lr=0.0040
+[02/28 00:18:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 195/300, Acc=0.9279, Val Loss=0.2793, lr=0.0040
+[02/28 00:18:19] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 196/300, Acc=0.9247, Val Loss=0.2875, lr=0.0040
+[02/28 00:18:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 197/300, Acc=0.9244, Val Loss=0.3037, lr=0.0040
+[02/28 00:18:28] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 198/300, Acc=0.9285, Val Loss=0.2947, lr=0.0040
+[02/28 00:18:33] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 199/300, Acc=0.9310, Val Loss=0.2747, lr=0.0040
+[02/28 00:18:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 200/300, Acc=0.9290, Val Loss=0.2840, lr=0.0040
+[02/28 00:18:42] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 201/300, Acc=0.9283, Val Loss=0.2947, lr=0.0040
+[02/28 00:18:46] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 202/300, Acc=0.9283, Val Loss=0.2916, lr=0.0040
+[02/28 00:18:51] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 203/300, Acc=0.9292, Val Loss=0.2862, lr=0.0040
+[02/28 00:18:56] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 204/300, Acc=0.9291, Val Loss=0.2892, lr=0.0040
+[02/28 00:19:00] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 205/300, Acc=0.9285, Val Loss=0.3037, lr=0.0040
+[02/28 00:19:05] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 206/300, Acc=0.9284, Val Loss=0.2930, lr=0.0040
+[02/28 00:19:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 207/300, Acc=0.9222, Val Loss=0.3199, lr=0.0040
+[02/28 00:19:14] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 208/300, Acc=0.9282, Val Loss=0.3002, lr=0.0040
+[02/28 00:19:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 209/300, Acc=0.9279, Val Loss=0.3047, lr=0.0040
+[02/28 00:19:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 210/300, Acc=0.9268, Val Loss=0.3003, lr=0.0040
+[02/28 00:19:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 211/300, Acc=0.9282, Val Loss=0.2998, lr=0.0040
+[02/28 00:19:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 212/300, Acc=0.9257, Val Loss=0.3149, lr=0.0040
+[02/28 00:19:37] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 213/300, Acc=0.9293, Val Loss=0.3031, lr=0.0040
+[02/28 00:19:41] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 214/300, Acc=0.9270, Val Loss=0.3119, lr=0.0040
+[02/28 00:19:46] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 215/300, Acc=0.9253, Val Loss=0.3104, lr=0.0040
+[02/28 00:19:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 216/300, Acc=0.9274, Val Loss=0.3119, lr=0.0040
+[02/28 00:19:55] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 217/300, Acc=0.9236, Val Loss=0.3208, lr=0.0040
+[02/28 00:20:00] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 218/300, Acc=0.9236, Val Loss=0.3106, lr=0.0040
+[02/28 00:20:04] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 219/300, Acc=0.9235, Val Loss=0.3170, lr=0.0040
+[02/28 00:20:09] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 220/300, Acc=0.9205, Val Loss=0.3360, lr=0.0040
+[02/28 00:20:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 221/300, Acc=0.9214, Val Loss=0.3228, lr=0.0040
+[02/28 00:20:18] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 222/300, Acc=0.9202, Val Loss=0.3350, lr=0.0040
+[02/28 00:20:23] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 223/300, Acc=0.9255, Val Loss=0.3063, lr=0.0040
+[02/28 00:20:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 224/300, Acc=0.9212, Val Loss=0.3196, lr=0.0040
+[02/28 00:20:32] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 225/300, Acc=0.9253, Val Loss=0.3118, lr=0.0040
+[02/28 00:20:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 226/300, Acc=0.9185, Val Loss=0.3361, lr=0.0040
+[02/28 00:20:41] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 227/300, Acc=0.9265, Val Loss=0.3040, lr=0.0040
+[02/28 00:20:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 228/300, Acc=0.9232, Val Loss=0.3162, lr=0.0040
+[02/28 00:20:50] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 229/300, Acc=0.9192, Val Loss=0.3299, lr=0.0040
+[02/28 00:20:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 230/300, Acc=0.9181, Val Loss=0.3256, lr=0.0040
+[02/28 00:20:59] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 231/300, Acc=0.9143, Val Loss=0.3619, lr=0.0040
+[02/28 00:21:04] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 232/300, Acc=0.9242, Val Loss=0.3102, lr=0.0040
+[02/28 00:21:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 233/300, Acc=0.9168, Val Loss=0.3447, lr=0.0040
+[02/28 00:21:13] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 234/300, Acc=0.9259, Val Loss=0.3017, lr=0.0040
+[02/28 00:21:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 235/300, Acc=0.9228, Val Loss=0.3046, lr=0.0040
+[02/28 00:21:22] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 236/300, Acc=0.9237, Val Loss=0.3150, lr=0.0040
+[02/28 00:21:27] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 237/300, Acc=0.9240, Val Loss=0.3046, lr=0.0040
+[02/28 00:21:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 238/300, Acc=0.9247, Val Loss=0.3186, lr=0.0040
+[02/28 00:21:36] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 239/300, Acc=0.9188, Val Loss=0.3402, lr=0.0040
+[02/28 00:21:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 240/300, Acc=0.9197, Val Loss=0.3326, lr=0.0008
+[02/28 00:21:45] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 241/300, Acc=0.9329, Val Loss=0.2768, lr=0.0008
+[02/28 00:21:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 242/300, Acc=0.9335, Val Loss=0.2799, lr=0.0008
+[02/28 00:21:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 243/300, Acc=0.9348, Val Loss=0.2772, lr=0.0008
+[02/28 00:21:59] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 244/300, Acc=0.9348, Val Loss=0.2789, lr=0.0008
+[02/28 00:22:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 245/300, Acc=0.9362, Val Loss=0.2765, lr=0.0008
+[02/28 00:22:08] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 246/300, Acc=0.9364, Val Loss=0.2780, lr=0.0008
+[02/28 00:22:12] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 247/300, Acc=0.9357, Val Loss=0.2856, lr=0.0008
+[02/28 00:22:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 248/300, Acc=0.9352, Val Loss=0.2856, lr=0.0008
+[02/28 00:22:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 249/300, Acc=0.9353, Val Loss=0.2862, lr=0.0008
+[02/28 00:22:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 250/300, Acc=0.9362, Val Loss=0.2843, lr=0.0008
+[02/28 00:22:31] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 251/300, Acc=0.9371, Val Loss=0.2864, lr=0.0008
+[02/28 00:22:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 252/300, Acc=0.9361, Val Loss=0.2897, lr=0.0008
+[02/28 00:22:40] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 253/300, Acc=0.9358, Val Loss=0.2949, lr=0.0008
+[02/28 00:22:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 254/300, Acc=0.9367, Val Loss=0.2907, lr=0.0008
+[02/28 00:22:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 255/300, Acc=0.9370, Val Loss=0.2916, lr=0.0008
+[02/28 00:22:54] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 256/300, Acc=0.9343, Val Loss=0.2962, lr=0.0008
+[02/28 00:22:58] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 257/300, Acc=0.9353, Val Loss=0.2966, lr=0.0008
+[02/28 00:23:03] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 258/300, Acc=0.9354, Val Loss=0.2960, lr=0.0008
+[02/28 00:23:07] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 259/300, Acc=0.9354, Val Loss=0.2947, lr=0.0008
+[02/28 00:23:12] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 260/300, Acc=0.9349, Val Loss=0.2980, lr=0.0008
+[02/28 00:23:17] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 261/300, Acc=0.9366, Val Loss=0.2935, lr=0.0008
+[02/28 00:23:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 262/300, Acc=0.9350, Val Loss=0.2963, lr=0.0008
+[02/28 00:23:26] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 263/300, Acc=0.9353, Val Loss=0.2987, lr=0.0008
+[02/28 00:23:30] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 264/300, Acc=0.9359, Val Loss=0.2970, lr=0.0008
+[02/28 00:23:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 265/300, Acc=0.9358, Val Loss=0.3021, lr=0.0008
+[02/28 00:23:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 266/300, Acc=0.9360, Val Loss=0.2939, lr=0.0008
+[02/28 00:23:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 267/300, Acc=0.9378, Val Loss=0.2946, lr=0.0008
+[02/28 00:23:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 268/300, Acc=0.9378, Val Loss=0.2925, lr=0.0008
+[02/28 00:23:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 269/300, Acc=0.9374, Val Loss=0.3001, lr=0.0008
+[02/28 00:23:58] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 270/300, Acc=0.9373, Val Loss=0.3011, lr=0.0002
+[02/28 00:24:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 271/300, Acc=0.9365, Val Loss=0.2996, lr=0.0002
+[02/28 00:24:07] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 272/300, Acc=0.9373, Val Loss=0.2971, lr=0.0002
+[02/28 00:24:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 273/300, Acc=0.9349, Val Loss=0.2986, lr=0.0002
+[02/28 00:24:16] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 274/300, Acc=0.9356, Val Loss=0.2990, lr=0.0002
+[02/28 00:24:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 275/300, Acc=0.9370, Val Loss=0.3015, lr=0.0002
+[02/28 00:24:25] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 276/300, Acc=0.9367, Val Loss=0.3003, lr=0.0002
+[02/28 00:24:30] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 277/300, Acc=0.9372, Val Loss=0.2995, lr=0.0002
+[02/28 00:24:35] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 278/300, Acc=0.9370, Val Loss=0.2987, lr=0.0002
+[02/28 00:24:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 279/300, Acc=0.9367, Val Loss=0.3002, lr=0.0002
+[02/28 00:24:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 280/300, Acc=0.9361, Val Loss=0.3009, lr=0.0002
+[02/28 00:24:49] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 281/300, Acc=0.9355, Val Loss=0.3004, lr=0.0002
+[02/28 00:24:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 282/300, Acc=0.9361, Val Loss=0.2979, lr=0.0002
+[02/28 00:24:58] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 283/300, Acc=0.9368, Val Loss=0.3000, lr=0.0002
+[02/28 00:25:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 284/300, Acc=0.9370, Val Loss=0.2991, lr=0.0002
+[02/28 00:25:07] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 285/300, Acc=0.9364, Val Loss=0.3009, lr=0.0002
+[02/28 00:25:12] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 286/300, Acc=0.9375, Val Loss=0.2982, lr=0.0002
+[02/28 00:25:16] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 287/300, Acc=0.9370, Val Loss=0.2992, lr=0.0002
+[02/28 00:25:21] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 288/300, Acc=0.9364, Val Loss=0.3010, lr=0.0002
+[02/28 00:25:25] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 289/300, Acc=0.9368, Val Loss=0.2983, lr=0.0002
+[02/28 00:25:30] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 290/300, Acc=0.9362, Val Loss=0.3001, lr=0.0002
+[02/28 00:25:34] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 291/300, Acc=0.9371, Val Loss=0.2970, lr=0.0002
+[02/28 00:25:39] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 292/300, Acc=0.9371, Val Loss=0.3028, lr=0.0002
+[02/28 00:25:44] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 293/300, Acc=0.9373, Val Loss=0.2991, lr=0.0002
+[02/28 00:25:48] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 294/300, Acc=0.9368, Val Loss=0.2980, lr=0.0002
+[02/28 00:25:53] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 295/300, Acc=0.9372, Val Loss=0.2989, lr=0.0002
+[02/28 00:25:58] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 296/300, Acc=0.9371, Val Loss=0.2973, lr=0.0002
+[02/28 00:26:02] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 297/300, Acc=0.9368, Val Loss=0.2966, lr=0.0002
+[02/28 00:26:07] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 298/300, Acc=0.9370, Val Loss=0.2983, lr=0.0002
+[02/28 00:26:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Epoch 299/300, Acc=0.9366, Val Loss=0.2997, lr=0.0002
+[02/28 00:26:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: Best Acc=0.9378
+[02/28 00:26:11] cifar10-group_norm_sl_itosp-resnet56-pruning-rate-0.5 INFO: ESSP-GLS Elapsed Time: 00:27:47

@@ -1,0 +1,525 @@
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Namespace(data_path='C:/ImageNet/', model='resnet18', pretrained=False, eval_pruned_model=False, pruned_path=None, device='cuda', batch_size=256, epochs=90, workers=8, opt='sgd', lr=0.1, momentum=0.9, weight_decay=0.0001, norm_weight_decay=None, bias_weight_decay=None, transformer_embedding_decay=None, label_smoothing=0.0, mixup_alpha=0.0, cutmix_alpha=0.0, total_epochs=130, total_warmup_epochs=0, learning_rate='(Cosine, 0.1)', print_freq=1500, output_dir='prune_0.4500_resnet18', resume='', start_epoch=0, cache_dataset=True, sync_bn=False, test_only=False, auto_augment=None, ra_magnitude=9, augmix_severity=3, random_erase=0.0, amp=False, world_size=1, dist_url='env://', model_ema=False, model_ema_steps=32, model_ema_decay=0.99998, use_deterministic_algorithms=False, interpolation='bilinear', val_resize_size=256, val_crop_size=224, train_crop_size=224, clip_grad_norm=None, ra_sampler=False, ra_reps=3, weights=None, prune=True, train_resume=False, method='group_norm_sl_oto', global_pruning=True, target_flops_rr=0.45, soft_keeping_ratio=0.0, reg=0.0001, reg_delta=0.0001, reg_add_interval=2, max_sparsity=1.0, pruning_stability_thresh=0.999, sl_resume=None, sl_start_epoch=5, sl_end_epoch=50, prune_monitor_start_epoch=0, layer_prune_limit=0.75, logger=<Logger resnet18-pruning-rate-0.45-log (DEBUG)>, distributed=False)
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Loading data...
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Loading training data...
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Loading dataset_train from /home/asdf/.torch/vision/datasets/imagefolder/a4418ecd99.pt
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Data loading took 0.5047929286956787
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Loading validation data...
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Loading dataset_test from /home/asdf/.torch/vision/datasets/imagefolder/6bf2dea0c1.pt
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Creating data loaders...
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: Creating model
+[11/20 14:07:43] resnet18-pruning-rate-0.45-log INFO: ====================================================================================================================
+[11/20 14:07:44] resnet18-pruning-rate-0.45-log INFO: Params: 11.6895 M
+[11/20 14:07:44] resnet18-pruning-rate-0.45-log INFO: ops: 1.8222 G
+[11/20 14:07:44] resnet18-pruning-rate-0.45-log INFO: ====================================================================================================================
+[11/20 14:07:44] resnet18-pruning-rate-0.45-log INFO: Pruning Structure Search and Sparcity Learning...
+[11/20 14:07:44] resnet18-pruning-rate-0.45-log INFO: Mixed Precision: False
+[11/20 14:07:44] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 14:07:45] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 10.51 M, (Param RR 10.12%)
+[11/20 14:07:45] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.45 M (FLOPs RR 45.04%, Speed-Up 1.82X )
+[11/20 14:07:45] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.0000
+[11/20 14:07:45] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.0000, reg = 0.0001
+[11/20 14:19:15] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 23.874 Acc@5 48.210
+[11/20 14:19:15] resnet18-pruning-rate-0.45-log INFO: Epoch 0/130, Current Best Acc = 23.874000
+[11/20 14:19:15] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 14:19:17] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.80 M, (Param RR 24.74%)
+[11/20 14:19:17] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.96 M (FLOPs RR 45.01%, Speed-Up 1.82X )
+[11/20 14:19:17] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.0000
+[11/20 14:19:17] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.0000, reg = 0.0001
+[11/20 14:30:21] resnet18-pruning-rate-0.45-log INFO: Epoch 1/130, Current Best Acc = 23.874000
+[11/20 14:30:21] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 14:30:22] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 9.27 M, (Param RR 20.68%)
+[11/20 14:30:22] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.27 M (FLOPs RR 45.00%, Speed-Up 1.82X )
+[11/20 14:30:22] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.6036
+[11/20 14:30:22] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.2012, reg = 0.0001
+[11/20 14:41:23] resnet18-pruning-rate-0.45-log INFO: Epoch 2/130, Current Best Acc = 23.874000
+[11/20 14:41:24] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 14:41:24] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 9.28 M, (Param RR 20.65%)
+[11/20 14:41:24] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.74 M (FLOPs RR 44.97%, Speed-Up 1.82X )
+[11/20 14:41:25] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.7541
+[11/20 14:41:25] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.4525, reg = 0.0001
+[11/20 14:52:31] resnet18-pruning-rate-0.45-log INFO: Epoch 3/130, Current Best Acc = 23.874000
+[11/20 14:52:31] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 14:52:32] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.71 M, (Param RR 25.51%)
+[11/20 14:52:32] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.40 M (FLOPs RR 44.99%, Speed-Up 1.82X )
+[11/20 14:52:32] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8064
+[11/20 14:52:32] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.7213, reg = 0.0001
+[11/20 15:03:33] resnet18-pruning-rate-0.45-log INFO: Epoch 4/130, Current Best Acc = 23.874000
+[11/20 15:03:33] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 15:03:34] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.81 M, (Param RR 24.62%)
+[11/20 15:03:34] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.50 M (FLOPs RR 45.04%, Speed-Up 1.82X )
+[11/20 15:03:34] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8130
+[11/20 15:03:34] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.7911, reg = 0.0001
+[11/20 15:14:36] resnet18-pruning-rate-0.45-log INFO: Epoch 5/130, Current Best Acc = 23.874000
+[11/20 15:14:36] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 15:14:37] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.67 M, (Param RR 25.82%)
+[11/20 15:14:37] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.84 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 15:14:37] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8335
+[11/20 15:14:37] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8176, reg = 0.0001
+[11/20 15:25:39] resnet18-pruning-rate-0.45-log INFO: Epoch 6/130, Current Best Acc = 23.874000
+[11/20 15:25:40] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 15:25:41] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.62 M, (Param RR 26.26%)
+[11/20 15:25:41] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.85 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 15:25:41] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8554
+[11/20 15:25:41] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8339, reg = 0.0001
+[11/20 15:36:47] resnet18-pruning-rate-0.45-log INFO: Epoch 7/130, Current Best Acc = 23.874000
+[11/20 15:36:47] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 15:36:48] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.82 M, (Param RR 24.57%)
+[11/20 15:36:48] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1007.83 M (FLOPs RR 44.69%, Speed-Up 1.81X )
+[11/20 15:36:48] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8375
+[11/20 15:36:48] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8421, reg = 0.0001
+[11/20 15:47:54] resnet18-pruning-rate-0.45-log INFO: Epoch 8/130, Current Best Acc = 23.874000
+[11/20 15:47:54] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 15:47:55] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.89 M, (Param RR 32.51%)
+[11/20 15:47:55] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.50 M (FLOPs RR 45.04%, Speed-Up 1.82X )
+[11/20 15:47:56] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8415
+[11/20 15:47:56] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8448, reg = 0.0001
+[11/20 15:58:59] resnet18-pruning-rate-0.45-log INFO: Epoch 9/130, Current Best Acc = 23.874000
+[11/20 15:59:00] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 15:59:01] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.44 M, (Param RR 36.31%)
+[11/20 15:59:01] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1007.40 M (FLOPs RR 44.71%, Speed-Up 1.81X )
+[11/20 15:59:01] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8220
+[11/20 15:59:01] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8337, reg = 0.0001
+[11/20 15:59:01] resnet18-pruning-rate-0.45-log INFO: Automatic $t_{sl-start}$) = 10
+[11/20 16:10:37] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 46.014 Acc@5 72.378
+[11/20 16:10:38] resnet18-pruning-rate-0.45-log INFO: Epoch 10/130, Current Best Acc = 46.014000
+[11/20 16:10:38] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 16:10:39] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.71 M, (Param RR 34.07%)
+[11/20 16:10:39] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.04 M (FLOPs RR 45.01%, Speed-Up 1.82X )
+[11/20 16:10:40] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8619
+[11/20 16:10:40] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8418, reg = 0.0002
+[11/20 16:21:45] resnet18-pruning-rate-0.45-log INFO: Epoch 11/130, Current Best Acc = 46.014000
+[11/20 16:21:46] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 16:21:46] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.10 M, (Param RR 30.72%)
+[11/20 16:21:46] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.41 M (FLOPs RR 45.04%, Speed-Up 1.82X )
+[11/20 16:21:47] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8646
+[11/20 16:21:47] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8495, reg = 0.0002
+[11/20 16:32:53] resnet18-pruning-rate-0.45-log INFO: Epoch 12/130, Current Best Acc = 46.014000
+[11/20 16:32:54] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 16:32:54] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.78 M, (Param RR 33.48%)
+[11/20 16:32:54] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.40 M (FLOPs RR 45.04%, Speed-Up 1.82X )
+[11/20 16:32:54] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.8994
+[11/20 16:32:54] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8753, reg = 0.0003
+[11/20 16:44:02] resnet18-pruning-rate-0.45-log INFO: Epoch 13/130, Current Best Acc = 46.014000
+[11/20 16:44:02] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 16:44:03] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.52 M, (Param RR 35.68%)
+[11/20 16:44:03] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.58 M (FLOPs RR 44.98%, Speed-Up 1.82X )
+[11/20 16:44:04] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9146
+[11/20 16:44:04] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.8928, reg = 0.0003
+[11/20 16:55:09] resnet18-pruning-rate-0.45-log INFO: Epoch 14/130, Current Best Acc = 46.014000
+[11/20 16:55:10] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 16:55:11] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.96 M, (Param RR 31.91%)
+[11/20 16:55:11] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.77 M (FLOPs RR 45.02%, Speed-Up 1.82X )
+[11/20 16:55:11] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9203
+[11/20 16:55:11] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9114, reg = 0.0004
+[11/20 17:06:17] resnet18-pruning-rate-0.45-log INFO: Epoch 15/130, Current Best Acc = 46.014000
+[11/20 17:06:17] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 17:06:18] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.07 M, (Param RR 30.94%)
+[11/20 17:06:18] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.13 M (FLOPs RR 45.00%, Speed-Up 1.82X )
+[11/20 17:06:19] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9211
+[11/20 17:06:19] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9187, reg = 0.0004
+[11/20 17:17:26] resnet18-pruning-rate-0.45-log INFO: Epoch 16/130, Current Best Acc = 46.014000
+[11/20 17:17:26] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 17:17:27] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 8.03 M, (Param RR 31.34%)
+[11/20 17:17:27] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.71 M (FLOPs RR 45.03%, Speed-Up 1.82X )
+[11/20 17:17:27] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9627
+[11/20 17:17:27] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9347, reg = 0.0005
+[11/20 17:28:30] resnet18-pruning-rate-0.45-log INFO: Epoch 17/130, Current Best Acc = 46.014000
+[11/20 17:28:30] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 17:28:31] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.99 M, (Param RR 31.68%)
+[11/20 17:28:31] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1003.06 M (FLOPs RR 44.95%, Speed-Up 1.82X )
+[11/20 17:28:31] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9611
+[11/20 17:28:31] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9483, reg = 0.0005
+[11/20 17:39:37] resnet18-pruning-rate-0.45-log INFO: Epoch 18/130, Current Best Acc = 46.014000
+[11/20 17:39:37] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 17:39:38] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.96 M, (Param RR 31.90%)
+[11/20 17:39:38] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.93 M (FLOPs RR 45.01%, Speed-Up 1.82X )
+[11/20 17:39:38] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9742
+[11/20 17:39:38] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9660, reg = 0.0006
+[11/20 17:50:46] resnet18-pruning-rate-0.45-log INFO: Epoch 19/130, Current Best Acc = 46.014000
+[11/20 17:50:46] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 17:50:48] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.96 M, (Param RR 31.88%)
+[11/20 17:50:48] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.91 M (FLOPs RR 45.02%, Speed-Up 1.82X )
+[11/20 17:50:48] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9820
+[11/20 17:50:48] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9724, reg = 0.0006
+[11/20 18:02:22] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 46.168 Acc@5 72.040
+[11/20 18:02:22] resnet18-pruning-rate-0.45-log INFO: Epoch 20/130, Current Best Acc = 46.168000
+[11/20 18:02:22] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 18:02:23] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.95 M, (Param RR 31.96%)
+[11/20 18:02:23] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.59 M (FLOPs RR 44.98%, Speed-Up 1.82X )
+[11/20 18:02:23] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9853
+[11/20 18:02:23] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9805, reg = 0.0007
+[11/20 18:13:21] resnet18-pruning-rate-0.45-log INFO: Epoch 21/130, Current Best Acc = 46.168000
+[11/20 18:13:21] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 18:13:22] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.98 M, (Param RR 31.69%)
+[11/20 18:13:22] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.98 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 18:13:22] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9929
+[11/20 18:13:22] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9867, reg = 0.0007
+[11/20 18:24:19] resnet18-pruning-rate-0.45-log INFO: Epoch 22/130, Current Best Acc = 46.168000
+[11/20 18:24:19] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 18:24:20] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.93 M, (Param RR 32.17%)
+[11/20 18:24:20] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.41 M (FLOPs RR 45.04%, Speed-Up 1.82X )
+[11/20 18:24:21] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9920
+[11/20 18:24:21] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9901, reg = 0.0008
+[11/20 18:35:18] resnet18-pruning-rate-0.45-log INFO: Epoch 23/130, Current Best Acc = 46.168000
+[11/20 18:35:19] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 18:35:20] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.93 M, (Param RR 32.15%)
+[11/20 18:35:20] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1001.39 M (FLOPs RR 45.04%, Speed-Up 1.82X )
+[11/20 18:35:20] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9944
+[11/20 18:35:20] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9931, reg = 0.0008
+[11/20 18:46:18] resnet18-pruning-rate-0.45-log INFO: Epoch 24/130, Current Best Acc = 46.168000
+[11/20 18:46:18] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 18:46:19] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.92 M, (Param RR 32.21%)
+[11/20 18:46:19] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.85 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 18:46:19] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9954
+[11/20 18:46:19] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9940, reg = 0.0009
+[11/20 18:57:19] resnet18-pruning-rate-0.45-log INFO: Epoch 25/130, Current Best Acc = 46.168000
+[11/20 18:57:19] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 18:57:20] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.95 M, (Param RR 31.98%)
+[11/20 18:57:20] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.97 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 18:57:20] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9963
+[11/20 18:57:20] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9954, reg = 0.0009
+[11/20 19:08:14] resnet18-pruning-rate-0.45-log INFO: Epoch 26/130, Current Best Acc = 46.168000
+[11/20 19:08:15] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 19:08:15] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.95 M, (Param RR 31.98%)
+[11/20 19:08:15] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.97 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 19:08:15] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9979
+[11/20 19:08:15] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9966, reg = 0.0010
+[11/20 19:19:11] resnet18-pruning-rate-0.45-log INFO: Epoch 27/130, Current Best Acc = 46.168000
+[11/20 19:19:12] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 19:19:13] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.95 M, (Param RR 31.98%)
+[11/20 19:19:13] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.97 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 19:19:13] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 1.0000
+[11/20 19:19:13] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9981, reg = 0.0010
+[11/20 19:30:11] resnet18-pruning-rate-0.45-log INFO: Epoch 28/130, Current Best Acc = 46.168000
+[11/20 19:30:11] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 19:30:11] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.94 M, (Param RR 32.10%)
+[11/20 19:30:11] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.94 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 19:30:11] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9985
+[11/20 19:30:11] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9988, reg = 0.0011
+[11/20 19:41:07] resnet18-pruning-rate-0.45-log INFO: Epoch 29/130, Current Best Acc = 46.168000
+[11/20 19:41:07] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 19:41:08] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.94 M, (Param RR 32.10%)
+[11/20 19:41:08] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.94 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 19:41:08] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (raw) = 0.9985
+[11/20 19:41:08] resnet18-pruning-rate-0.45-log INFO: Pruning Stability Indicator (avg) = 0.9990, reg = 0.0011
+[11/20 19:52:45] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 48.028 Acc@5 73.806
+[11/20 19:52:45] resnet18-pruning-rate-0.45-log INFO: Epoch 30/130, Current Best Acc = 48.028000
+[11/20 19:52:45] resnet18-pruning-rate-0.45-log INFO: Training time 5:45:01
+[11/20 19:52:45] resnet18-pruning-rate-0.45-log INFO: Pruning model...
+[11/20 19:52:45] resnet18-pruning-rate-0.45-log INFO: Pruning to Target FLOPs [Binary Search]...
+[11/20 19:52:46] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.94 M, (Param RR 32.10%)
+[11/20 19:52:46] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.94 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 19:52:46] resnet18-pruning-rate-0.45-log INFO: ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=1000, bias=True)
+)
+[11/20 19:53:16] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 48.032 Acc@5 73.808
+[11/20 19:53:16] resnet18-pruning-rate-0.45-log INFO: Pruning...
+[11/20 19:53:16] resnet18-pruning-rate-0.45-log INFO: ResNet(
+  (conv1): Conv2d(3, 43, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(43, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(43, 30, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(30, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(30, 43, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(43, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(43, 41, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(41, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(41, 43, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(43, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(43, 114, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(114, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(114, 113, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(113, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(43, 113, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(113, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(113, 105, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(105, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(105, 113, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(113, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(113, 206, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(206, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(206, 126, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(126, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(113, 126, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(126, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(126, 118, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(118, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(118, 126, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(126, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(126, 343, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(343, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(343, 511, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(511, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(126, 511, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(511, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(511, 459, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(459, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(459, 511, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(511, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=511, out_features=1000, bias=True)
+)
+[11/20 19:53:46] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 20.506 Acc@5 43.262
+[11/20 19:53:46] resnet18-pruning-rate-0.45-log INFO: Params: 11.69 M => 7.94 M, (Param RR 32.10%)
+[11/20 19:53:46] resnet18-pruning-rate-0.45-log INFO: FLOPs: 1822.18 M => 1002.94 M (FLOPs RR 44.96%, Speed-Up 1.82X )
+[11/20 19:53:46] resnet18-pruning-rate-0.45-log INFO: Acc1: 48.0320 => 20.5060, Acc5: 73.8080 => 43.2620
+[11/20 19:53:46] resnet18-pruning-rate-0.45-log INFO: ====================================================================================================================
+[11/20 19:53:46] resnet18-pruning-rate-0.45-log INFO: Continue Training after Pruning ...
+[11/20 19:53:46] resnet18-pruning-rate-0.45-log INFO: Mixed Precision: False
+[11/20 20:04:43] resnet18-pruning-rate-0.45-log INFO: Epoch 31/130, Current Best Acc = 0.000000
+[11/20 20:15:44] resnet18-pruning-rate-0.45-log INFO: Epoch 32/130, Current Best Acc = 0.000000
+[11/20 20:26:47] resnet18-pruning-rate-0.45-log INFO: Epoch 33/130, Current Best Acc = 0.000000
+[11/20 20:37:51] resnet18-pruning-rate-0.45-log INFO: Epoch 34/130, Current Best Acc = 0.000000
+[11/20 20:48:46] resnet18-pruning-rate-0.45-log INFO: Epoch 35/130, Current Best Acc = 0.000000
+[11/20 20:59:51] resnet18-pruning-rate-0.45-log INFO: Epoch 36/130, Current Best Acc = 0.000000
+[11/20 21:10:49] resnet18-pruning-rate-0.45-log INFO: Epoch 37/130, Current Best Acc = 0.000000
+[11/20 21:21:55] resnet18-pruning-rate-0.45-log INFO: Epoch 38/130, Current Best Acc = 0.000000
+[11/20 21:32:52] resnet18-pruning-rate-0.45-log INFO: Epoch 39/130, Current Best Acc = 0.000000
+[11/20 21:44:28] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 47.700 Acc@5 73.642
+[11/20 21:44:28] resnet18-pruning-rate-0.45-log INFO: Epoch 40/130, Current Best Acc = 47.700000
+[11/20 21:55:27] resnet18-pruning-rate-0.45-log INFO: Epoch 41/130, Current Best Acc = 47.700000
+[11/20 22:06:33] resnet18-pruning-rate-0.45-log INFO: Epoch 42/130, Current Best Acc = 47.700000
+[11/20 22:17:36] resnet18-pruning-rate-0.45-log INFO: Epoch 43/130, Current Best Acc = 47.700000
+[11/20 22:28:48] resnet18-pruning-rate-0.45-log INFO: Epoch 44/130, Current Best Acc = 47.700000
+[11/20 22:39:47] resnet18-pruning-rate-0.45-log INFO: Epoch 45/130, Current Best Acc = 47.700000
+[11/20 22:50:51] resnet18-pruning-rate-0.45-log INFO: Epoch 46/130, Current Best Acc = 47.700000
+[11/20 23:01:55] resnet18-pruning-rate-0.45-log INFO: Epoch 47/130, Current Best Acc = 47.700000
+[11/20 23:13:00] resnet18-pruning-rate-0.45-log INFO: Epoch 48/130, Current Best Acc = 47.700000
+[11/20 23:23:54] resnet18-pruning-rate-0.45-log INFO: Epoch 49/130, Current Best Acc = 47.700000
+[11/20 23:35:34] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 45.602 Acc@5 71.074
+[11/20 23:35:34] resnet18-pruning-rate-0.45-log INFO: Epoch 50/130, Current Best Acc = 47.700000
+[11/20 23:46:41] resnet18-pruning-rate-0.45-log INFO: Epoch 51/130, Current Best Acc = 47.700000
+[11/20 23:57:45] resnet18-pruning-rate-0.45-log INFO: Epoch 52/130, Current Best Acc = 47.700000
+[11/21 00:08:55] resnet18-pruning-rate-0.45-log INFO: Epoch 53/130, Current Best Acc = 47.700000
+[11/21 00:20:05] resnet18-pruning-rate-0.45-log INFO: Epoch 54/130, Current Best Acc = 47.700000
+[11/21 00:31:11] resnet18-pruning-rate-0.45-log INFO: Epoch 55/130, Current Best Acc = 47.700000
+[11/21 00:42:16] resnet18-pruning-rate-0.45-log INFO: Epoch 56/130, Current Best Acc = 47.700000
+[11/21 00:53:22] resnet18-pruning-rate-0.45-log INFO: Epoch 57/130, Current Best Acc = 47.700000
+[11/21 01:04:25] resnet18-pruning-rate-0.45-log INFO: Epoch 58/130, Current Best Acc = 47.700000
+[11/21 01:15:30] resnet18-pruning-rate-0.45-log INFO: Epoch 59/130, Current Best Acc = 47.700000
+[11/21 01:27:09] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 51.880 Acc@5 77.188
+[11/21 01:27:09] resnet18-pruning-rate-0.45-log INFO: Epoch 60/130, Current Best Acc = 51.880000
+[11/21 01:38:21] resnet18-pruning-rate-0.45-log INFO: Epoch 61/130, Current Best Acc = 51.880000
+[11/21 01:49:26] resnet18-pruning-rate-0.45-log INFO: Epoch 62/130, Current Best Acc = 51.880000
+[11/21 02:00:36] resnet18-pruning-rate-0.45-log INFO: Epoch 63/130, Current Best Acc = 51.880000
+[11/21 02:11:42] resnet18-pruning-rate-0.45-log INFO: Epoch 64/130, Current Best Acc = 51.880000
+[11/21 02:22:44] resnet18-pruning-rate-0.45-log INFO: Epoch 65/130, Current Best Acc = 51.880000
+[11/21 02:34:00] resnet18-pruning-rate-0.45-log INFO: Epoch 66/130, Current Best Acc = 51.880000
+[11/21 02:45:03] resnet18-pruning-rate-0.45-log INFO: Epoch 67/130, Current Best Acc = 51.880000
+[11/21 02:56:03] resnet18-pruning-rate-0.45-log INFO: Epoch 68/130, Current Best Acc = 51.880000
+[11/21 03:07:11] resnet18-pruning-rate-0.45-log INFO: Epoch 69/130, Current Best Acc = 51.880000
+[11/21 03:18:56] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 55.000 Acc@5 79.818
+[11/21 03:18:56] resnet18-pruning-rate-0.45-log INFO: Epoch 70/130, Current Best Acc = 55.000000
+[11/21 03:30:01] resnet18-pruning-rate-0.45-log INFO: Epoch 71/130, Current Best Acc = 55.000000
+[11/21 03:41:10] resnet18-pruning-rate-0.45-log INFO: Epoch 72/130, Current Best Acc = 55.000000
+[11/21 03:52:17] resnet18-pruning-rate-0.45-log INFO: Epoch 73/130, Current Best Acc = 55.000000
+[11/21 04:03:25] resnet18-pruning-rate-0.45-log INFO: Epoch 74/130, Current Best Acc = 55.000000
+[11/21 04:14:33] resnet18-pruning-rate-0.45-log INFO: Epoch 75/130, Current Best Acc = 55.000000
+[11/21 04:25:34] resnet18-pruning-rate-0.45-log INFO: Epoch 76/130, Current Best Acc = 55.000000
+[11/21 04:36:43] resnet18-pruning-rate-0.45-log INFO: Epoch 77/130, Current Best Acc = 55.000000
+[11/21 04:47:51] resnet18-pruning-rate-0.45-log INFO: Epoch 78/130, Current Best Acc = 55.000000
+[11/21 04:58:58] resnet18-pruning-rate-0.45-log INFO: Epoch 79/130, Current Best Acc = 55.000000
+[11/21 05:10:37] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 57.062 Acc@5 81.018
+[11/21 05:10:37] resnet18-pruning-rate-0.45-log INFO: Epoch 80/130, Current Best Acc = 57.062000
+[11/21 05:21:38] resnet18-pruning-rate-0.45-log INFO: Epoch 81/130, Current Best Acc = 57.062000
+[11/21 05:32:38] resnet18-pruning-rate-0.45-log INFO: Epoch 82/130, Current Best Acc = 57.062000
+[11/21 05:43:46] resnet18-pruning-rate-0.45-log INFO: Epoch 83/130, Current Best Acc = 57.062000
+[11/21 05:54:46] resnet18-pruning-rate-0.45-log INFO: Epoch 84/130, Current Best Acc = 57.062000
+[11/21 06:05:46] resnet18-pruning-rate-0.45-log INFO: Epoch 85/130, Current Best Acc = 57.062000
+[11/21 06:16:43] resnet18-pruning-rate-0.45-log INFO: Epoch 86/130, Current Best Acc = 57.062000
+[11/21 06:27:55] resnet18-pruning-rate-0.45-log INFO: Epoch 87/130, Current Best Acc = 57.062000
+[11/21 06:39:06] resnet18-pruning-rate-0.45-log INFO: Epoch 88/130, Current Best Acc = 57.062000
+[11/21 06:50:17] resnet18-pruning-rate-0.45-log INFO: Epoch 89/130, Current Best Acc = 57.062000
+[11/21 07:01:56] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 60.004 Acc@5 83.104
+[11/21 07:01:56] resnet18-pruning-rate-0.45-log INFO: Epoch 90/130, Current Best Acc = 60.004000
+[11/21 07:12:58] resnet18-pruning-rate-0.45-log INFO: Epoch 91/130, Current Best Acc = 60.004000
+[11/21 07:24:09] resnet18-pruning-rate-0.45-log INFO: Epoch 92/130, Current Best Acc = 60.004000
+[11/21 07:35:13] resnet18-pruning-rate-0.45-log INFO: Epoch 93/130, Current Best Acc = 60.004000
+[11/21 07:46:17] resnet18-pruning-rate-0.45-log INFO: Epoch 94/130, Current Best Acc = 60.004000
+[11/21 07:57:18] resnet18-pruning-rate-0.45-log INFO: Epoch 95/130, Current Best Acc = 60.004000
+[11/21 08:08:18] resnet18-pruning-rate-0.45-log INFO: Epoch 96/130, Current Best Acc = 60.004000
+[11/21 08:19:15] resnet18-pruning-rate-0.45-log INFO: Epoch 97/130, Current Best Acc = 60.004000
+[11/21 08:30:23] resnet18-pruning-rate-0.45-log INFO: Epoch 98/130, Current Best Acc = 60.004000
+[11/21 08:41:30] resnet18-pruning-rate-0.45-log INFO: Epoch 99/130, Current Best Acc = 60.004000
+[11/21 08:53:09] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 62.536 Acc@5 84.870
+[11/21 08:53:09] resnet18-pruning-rate-0.45-log INFO: Epoch 100/130, Current Best Acc = 62.536000
+[11/21 09:04:52] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 62.830 Acc@5 85.038
+[11/21 09:04:52] resnet18-pruning-rate-0.45-log INFO: Epoch 101/130, Current Best Acc = 62.830000
+[11/21 09:16:29] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 63.154 Acc@5 85.118
+[11/21 09:16:29] resnet18-pruning-rate-0.45-log INFO: Epoch 102/130, Current Best Acc = 63.154000
+[11/21 09:27:57] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 63.600 Acc@5 85.728
+[11/21 09:27:57] resnet18-pruning-rate-0.45-log INFO: Epoch 103/130, Current Best Acc = 63.600000
+[11/21 09:39:34] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 63.846 Acc@5 85.576
+[11/21 09:39:35] resnet18-pruning-rate-0.45-log INFO: Epoch 104/130, Current Best Acc = 63.846000
+[11/21 09:51:14] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 64.048 Acc@5 85.866
+[11/21 09:51:15] resnet18-pruning-rate-0.45-log INFO: Epoch 105/130, Current Best Acc = 64.048000
+[11/21 10:02:48] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 64.120 Acc@5 85.932
+[11/21 10:02:48] resnet18-pruning-rate-0.45-log INFO: Epoch 106/130, Current Best Acc = 64.120000
+[11/21 10:14:21] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 64.346 Acc@5 85.906
+[11/21 10:14:21] resnet18-pruning-rate-0.45-log INFO: Epoch 107/130, Current Best Acc = 64.346000
+[11/21 10:25:55] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 65.102 Acc@5 86.478
+[11/21 10:25:55] resnet18-pruning-rate-0.45-log INFO: Epoch 108/130, Current Best Acc = 65.102000
+[11/21 10:37:32] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 65.086 Acc@5 86.594
+[11/21 10:37:32] resnet18-pruning-rate-0.45-log INFO: Epoch 109/130, Current Best Acc = 65.102000
+[11/21 10:49:08] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 65.362 Acc@5 86.588
+[11/21 10:49:08] resnet18-pruning-rate-0.45-log INFO: Epoch 110/130, Current Best Acc = 65.362000
+[11/21 11:00:48] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 65.080 Acc@5 86.428
+[11/21 11:00:48] resnet18-pruning-rate-0.45-log INFO: Epoch 111/130, Current Best Acc = 65.362000
+[11/21 11:12:30] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 65.756 Acc@5 86.746
+[11/21 11:12:31] resnet18-pruning-rate-0.45-log INFO: Epoch 112/130, Current Best Acc = 65.756000
+[11/21 11:24:14] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 66.302 Acc@5 87.270
+[11/21 11:24:14] resnet18-pruning-rate-0.45-log INFO: Epoch 113/130, Current Best Acc = 66.302000
+[11/21 11:35:49] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 66.442 Acc@5 87.326
+[11/21 11:35:49] resnet18-pruning-rate-0.45-log INFO: Epoch 114/130, Current Best Acc = 66.442000
+[11/21 11:47:31] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 67.114 Acc@5 87.630
+[11/21 11:47:32] resnet18-pruning-rate-0.45-log INFO: Epoch 115/130, Current Best Acc = 67.114000
+[11/21 11:59:13] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 67.358 Acc@5 87.684
+[11/21 11:59:13] resnet18-pruning-rate-0.45-log INFO: Epoch 116/130, Current Best Acc = 67.358000
+[11/21 12:10:59] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 67.304 Acc@5 87.774
+[11/21 12:11:00] resnet18-pruning-rate-0.45-log INFO: Epoch 117/130, Current Best Acc = 67.358000
+[11/21 12:22:33] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 67.438 Acc@5 87.920
+[11/21 12:22:33] resnet18-pruning-rate-0.45-log INFO: Epoch 118/130, Current Best Acc = 67.438000
+[11/21 12:34:08] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 67.718 Acc@5 88.112
+[11/21 12:34:09] resnet18-pruning-rate-0.45-log INFO: Epoch 119/130, Current Best Acc = 67.718000
+[11/21 12:45:44] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 67.954 Acc@5 88.264
+[11/21 12:45:44] resnet18-pruning-rate-0.45-log INFO: Epoch 120/130, Current Best Acc = 67.954000
+[11/21 12:57:25] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.062 Acc@5 88.324
+[11/21 12:57:25] resnet18-pruning-rate-0.45-log INFO: Epoch 121/130, Current Best Acc = 68.062000
+[11/21 13:09:07] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.176 Acc@5 88.464
+[11/21 13:09:07] resnet18-pruning-rate-0.45-log INFO: Epoch 122/130, Current Best Acc = 68.176000
+[11/21 13:20:43] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.378 Acc@5 88.546
+[11/21 13:20:43] resnet18-pruning-rate-0.45-log INFO: Epoch 123/130, Current Best Acc = 68.378000
+[11/21 13:32:22] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.570 Acc@5 88.450
+[11/21 13:32:23] resnet18-pruning-rate-0.45-log INFO: Epoch 124/130, Current Best Acc = 68.570000
+[11/21 13:44:03] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.594 Acc@5 88.574
+[11/21 13:44:03] resnet18-pruning-rate-0.45-log INFO: Epoch 125/130, Current Best Acc = 68.594000
+[11/21 13:55:44] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.566 Acc@5 88.648
+[11/21 13:55:44] resnet18-pruning-rate-0.45-log INFO: Epoch 126/130, Current Best Acc = 68.594000
+[11/21 14:07:24] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.634 Acc@5 88.622
+[11/21 14:07:25] resnet18-pruning-rate-0.45-log INFO: Epoch 127/130, Current Best Acc = 68.634000
+[11/21 14:19:06] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.594 Acc@5 88.602
+[11/21 14:19:06] resnet18-pruning-rate-0.45-log INFO: Epoch 128/130, Current Best Acc = 68.634000
+[11/21 14:30:38] resnet18-pruning-rate-0.45-log INFO: Test:  Acc@1 68.662 Acc@5 88.608
+[11/21 14:30:38] resnet18-pruning-rate-0.45-log INFO: Epoch 129/130, Current Best Acc = 68.662000
+[11/21 14:30:38] resnet18-pruning-rate-0.45-log INFO: Training time 18:36:52
+[11/21 14:30:38] resnet18-pruning-rate-0.45-log INFO: Total (Pruning + Training) Time Elapsed: 1 day, 0:22:54
