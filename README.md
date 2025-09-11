@@ -36,6 +36,20 @@ Extensive experiments on **CIFAR-10/100** and **ImageNet** with **VGGNet, ResNet
 
 ## 🚀 Usage  
 
+### 🔹 Preparing ImageNet Dataset
+
+1. Download the **ImageNet ILSVRC 2012** dataset from the official [ImageNet website](https://www.image-net.org/).  
+2. Extract the dataset into a folder, e.g., `D:/ImageNet/`. Your folder structure should look like:
+3. Update the dataset path in `main_imagenet.py`:
+
+```python
+parser.add_argument(
+    "--data-path", 
+    default="D:/ImageNet/",  # set your ImageNet folder here
+    type=str, 
+    help="dataset path"
+)
+'''
 ### 🔹 Pruning on CIFAR-10/100  
 Run the script `scripts/prune_cifar.sh` to prune VGGNet and ResNet models on CIFAR-10/100 datasets.
 ```ruby
