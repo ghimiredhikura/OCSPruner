@@ -49,7 +49,8 @@ parser.add_argument(
     type=str, 
     help="dataset path"
 )
-'''
+```
+
 ### 🔹 Pruning on CIFAR-10/100  
 Run the script `scripts/prune_cifar.sh` to prune VGGNet and ResNet models on CIFAR-10/100 datasets.
 ```ruby
