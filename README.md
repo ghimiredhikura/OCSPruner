@@ -39,7 +39,7 @@ Extensive experiments on **CIFAR-10/100** and **ImageNet** with **VGGNet, ResNet
 ### 🔹 Preparing ImageNet Dataset
 
 1. Download the **ImageNet ILSVRC 2012** dataset from the official [ImageNet website](https://www.image-net.org/).  
-2. Extract the dataset into a folder, e.g., `D:/ImageNet/`. Your folder structure should look like:
+2. Extract the dataset into a folder, e.g., `D:/ImageNet/`.
 3. Update the dataset path in `main_imagenet.py`:
 
 ```python
