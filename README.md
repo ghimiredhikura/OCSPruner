@@ -1,7 +1,8 @@
-# One-Cycle Structured Pruning via Stability-Driven Subnetwork Search, [WACV 2026](https://wacv.thecvf.com/) (Accepted)
+# One-Cycle Structured Pruning via Stability-Driven Subnetwork Search
 
-This repository contains the official implementation of the paper:  
-**[One-Cycle Structured Pruning via Stability-Driven Subnetwork Search (WACV 2026)](https://arxiv.org/abs/2501.13439)**  
+📄 Official implementation of our paper accepted at [<span style="color:#009688">WACV 2026</span>](https://wacv.thecvf.com/)  
+
+🔗 Preprint available on [arXiv (2501.13439)](https://arxiv.org/abs/2501.13439)
 
 ---
 
@@ -11,9 +12,6 @@ Structured pruning methods often rely on multi-stage training procedures that in
 The key idea is to identify the optimal sub-network early in training, guided by **norm-based group saliency criteria** and **structured sparsity regularization**. We further introduce a novel **pruning indicator** that determines the stable pruning epoch by measuring the similarity between evolving sub-networks across consecutive epochs. The group sparsity regularization accelerates pruning, further reducing training time.  
 
 Extensive experiments on **CIFAR-10/100** and **ImageNet** with **VGGNet, ResNet, and MobileNet** demonstrate that our method achieves **state-of-the-art accuracy** while being among the most efficient pruning frameworks in terms of training cost.  
-
-🔗 [Paper link (WACV 2026)](https://arxiv.org/abs/2501.13439)  
-📂 [Code](https://github.com/ghimiredhikura/OCSPruner)  
 
 ## 📊 Algorithm Pipeline
 
