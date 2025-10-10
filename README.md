@@ -4,6 +4,8 @@
 
 <p align="center">
   <img src="assets/wacv-navbar-logo.png" alt="wacv26" width="200"/>
+  <img src="assets/wacv-navbar-logo.png" alt="wacv26" width="200"/>
+  <img src="assets/wacv-navbar-logo.png" alt="wacv26" width="200"/>
 </p>
 
 🔗 Preprint available on [arXiv (2501.13439)](https://arxiv.org/abs/2501.13439)
