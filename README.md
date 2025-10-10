@@ -5,7 +5,7 @@
 <p align="left">
   <img src="assets/cropped-cvf-s.jpg" alt="wacv26" width="150"/>
   <img src="assets/download.png" alt="wacv26" width="325"/>
-  <img src="assets/wacv-navbar-logo.png" alt="wacv26" width="290"/>
+  <img src="assets/wacv-navbar-logo.png" alt="wacv26" width="350"/>
 </p>
 
 🔗 Preprint available on [arXiv (2501.13439)](https://arxiv.org/abs/2501.13439)
