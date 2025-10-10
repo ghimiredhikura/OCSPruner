@@ -1,5 +1,7 @@
 # One-Cycle Structured Pruning via Stability-Driven Subnetwork Search
 
+![wacv26](assets/wacv-navbar-logo.png) 
+
 **📄 Official implementation of our paper Accepted at [<span style="color:#009688">WACV 2026</span>](https://wacv.thecvf.com/)**
 
 🔗 Preprint available on [arXiv (2501.13439)](https://arxiv.org/abs/2501.13439)
