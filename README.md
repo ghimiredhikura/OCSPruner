@@ -3,9 +3,9 @@
 **📄 Official implementation of our paper Accepted at [<span style="color:#009688">The IEEE/CVF Winter Conference on Applications of Computer Vision 2026</span>](https://wacv.thecvf.com/)**
 
 <p align="left">
-  <img src="assets/cropped-cvf-s.jpg" alt="wacv26" width="100"/>
-  <img src="assets/download.png" alt="wacv26" width="200"/>
-  <img src="assets/wacv-navbar-logo.png" alt="wacv26" width="200"/>
+  <img src="assets/cropped-cvf-s.jpg" alt="wacv26" width="150"/>
+  <img src="assets/download.png" alt="wacv26" width="325"/>
+  <img src="assets/wacv-navbar-logo.png" alt="wacv26" width="290"/>
 </p>
 
 🔗 Preprint available on [arXiv (2501.13439)](https://arxiv.org/abs/2501.13439)
