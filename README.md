@@ -91,3 +91,5 @@ If you find this work useful, please cite our paper:
   booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
   year={2026}
 }
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fghimiredhikura%2FOCSPruner&label=Visitors&countColor=%23263759)
