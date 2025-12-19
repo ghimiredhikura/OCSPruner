@@ -8,7 +8,7 @@
   <img src="assets/wacv-navbar-logo.png" alt="wacv26" width="340"/>
 </p>
 
-🔗 Preprint available on [arXiv (2501.13439)](https://arxiv.org/abs/2501.13439)
+🔗 This work is described in: https://arxiv.org/abs/2501.13439
 
 ---
 
